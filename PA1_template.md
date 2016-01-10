@@ -1,21 +1,13 @@
----
-title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
----
+# Reproducible Research: Peer Assessment 1
 
 ## This line was added to test github desktop commit
 
 ## Loading and preprocessing the data
 
-### Read data without unzip file in temporary folder
-
+# Read data without unzip file in temporary folder
+'''r
 data <- read.table(unz("activity.zip", "activity.csv"), header=T, sep=",")
-mydata <- as.data.frame(data)
-library(ggplot2)
-
-qplot(mydata$steps, geom="histogram") 
+'''
 
 ## What is mean total number of steps taken per day?
 
